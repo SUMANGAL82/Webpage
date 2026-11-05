@@ -910,43 +910,42 @@ a:focus-visible, button:focus-visible{
 /* =====================================================================
    CONTACT
    ===================================================================== */
-.contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:34px; }
-@media (max-width:820px){ .contact-grid{ grid-template-columns:1fr; } }
-.contact-row{
-  display:flex; align-items:center; gap:15px;
-  padding:15px 4px; border-bottom:1px dashed var(--line-soft);
+.contact-blocks{ display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:start; }
+@media (max-width:860px){ .contact-blocks{ grid-template-columns:1fr; } }
+.contact-blocks .panel{ margin-bottom:22px; }
+.contact-blocks .panel:last-child{ margin-bottom:0; }
+.contact-block-label{
+  font-family:var(--font-mono); font-size:11px; color:var(--dim);
+  text-transform:uppercase; letter-spacing:.12em; margin-bottom:8px;
 }
-.contact-row .ico{
-  width:42px; height:42px; border-radius:12px; flex-shrink:0;
-  display:grid; place-items:center; font-size:17px;
-  background:linear-gradient(135deg,var(--blue),var(--cyan));
-  box-shadow:0 6px 18px rgba(31,111,235,.3);
-  color:#fff;
-}
-.contact-row .k{ font-family:var(--font-mono); font-size:11px; color:var(--dim); text-transform:uppercase; letter-spacing:.1em; }
-.contact-row .v{ font-size:15px; word-break:break-all; }
-.contact-row a{ transition:color .2s; }
-.contact-row a:hover{ color:var(--cyan); }
+.divider-label .sub{ text-transform:none; letter-spacing:.04em; color:var(--dim); }
 
-.ref-card{
-  display:block;
-  border:1px solid var(--line-soft); border-radius:var(--radius);
-  padding:20px 22px; margin-bottom:14px; background:var(--surface);
-  backdrop-filter:blur(8px);
-  transition:transform .3s var(--ease), border-color .3s var(--ease);
-  position:relative; overflow:hidden;
+.contact-links{ display:flex; flex-direction:column; gap:8px; margin:2px 0 16px; }
+.contact-links a{
+  font-size:16px; font-weight:600; color:var(--blue); width:fit-content;
+  transition:color .2s var(--ease);
 }
-.ref-card::before{
-  content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
-  background:linear-gradient(var(--teal),var(--green));
-  opacity:.6;
+.contact-links a:hover{ color:var(--cyan); }
+
+.profile-list{ display:flex; flex-direction:column; }
+.profile-list li{ padding:13px 0; border-bottom:1px dashed var(--line-soft); }
+.profile-list li:first-child{ padding-top:2px; }
+.profile-list li:last-child{ padding-bottom:0; border-bottom:none; }
+.profile-list a{
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:16px; font-weight:600; color:var(--text);
+  transition:color .2s var(--ease);
 }
-.ref-card:hover{ transform:translateX(5px); border-color:rgba(31,111,235,.3); }
-.ref-card h4{ font-size:16px; margin-bottom:3px; }
-.ref-card .role{ font-size:13px; color:var(--gold); margin-bottom:9px; font-family:var(--font-mono); }
-.ref-card .org{ font-size:13.5px; color:var(--muted); margin-bottom:8px; }
-.ref-card .contact-mini{ font-family:var(--font-mono); font-size:12px; color:var(--dim); }
-.ref-card .contact-mini a{ color:var(--cyan); }
+.profile-list a::after{ content:'↗'; color:var(--cyan); font-size:13px; transition:transform .2s var(--ease); }
+.profile-list a:hover{ color:var(--blue); }
+.profile-list a:hover::after{ transform:translate(2px,-2px); }
+.profile-list span{ display:block; font-size:13.5px; color:var(--dim); margin-top:2px; }
+
+.cta-panel{ text-align:center; padding:46px 30px; }
+.cta-panel h2{ font-size:clamp(24px,3vw,34px); margin-bottom:14px; }
+.cta-panel > p{ max-width:62ch; margin:0 auto 24px; }
+.cta-panel .btn-row{ justify-content:center; }
+.cta-panel .cta-note{ margin:22px auto 0; font-size:14px; color:var(--dim); }
 
 /* =====================================================================
    EDUCATION / TABLE-like rows
