@@ -929,6 +929,7 @@ a:focus-visible, button:focus-visible{
 .contact-row a:hover{ color:var(--cyan); }
 
 .ref-card{
+  display:block;
   border:1px solid var(--line-soft); border-radius:var(--radius);
   padding:20px 22px; margin-bottom:14px; background:var(--surface);
   backdrop-filter:blur(8px);
