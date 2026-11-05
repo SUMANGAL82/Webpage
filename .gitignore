@@ -1,0 +1,35 @@
+# Archives and backups
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.backup
+*.old
+
+# Duplicate / exported copy of the site (root folder is the live site)
+sumangal-website/
+
+# Working notes and scratch files
+changes.txt
+index.html.txt
+*.tmp
+*.log
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Build output and dependencies (in case tooling is added later)
+node_modules/
+dist/
+.cache/

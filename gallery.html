@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Dr. Sumangal Bhattacharya</title>
+<meta name="description" content="Photo gallery of Dr. Sumangal Bhattacharya — a collection of memories from conferences, classrooms, academic visits, and the people met along the way.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-overlay"></div>
+<div class="aurora"><span></span><span></span><span></span></div>
+<div class="mathfield" id="mathfield"></div>
+<div class="progress"></div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="orb">Σ</span>Dr. Sumangal Bhattacharya</a>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="idx">00</span>Home</a></li>
+      <li><a href="about.html"><span class="idx">01</span>About</a></li>
+      <li><a href="research.html"><span class="idx">02</span>Research</a></li>
+      <li><a href="teaching.html"><span class="idx">03</span>Teaching</a></li>
+      <li><a href="gallery.html"><span class="idx">04</span>Gallery</a></li>
+      <li><a href="conferences.html"><span class="idx">05</span>Conferences</a></li>
+      <li><a href="contact.html"><span class="idx">06</span>Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb reveal">Gallery</p>
+      <h1 class="reveal">Moments Beyond the <span class="grad grad-3">Mathematics</span>.</h1>
+      <p class="reveal" data-delay="1">
+        A collection of memories from conferences, classrooms, academic visits, and the people I
+        have met along the way. Beyond research papers and lectures, academic life is also about
+        conversations, friendships, shared experiences, and the little moments that stay with us.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:30px;">
+    <div class="wrap">
+      <div class="gallery-toolbar reveal">
+        <div class="section-head" style="margin-bottom:0;">
+          <h2 style="font-size:clamp(22px,3vw,30px);">Glimpses Along the <span class="grad grad-1">Way</span></h2>
+        </div>
+        <span class="gallery-count mono" id="sl-counter">26 photographs · Conferences, classrooms, travels &amp; memories</span>
+      </div>
+
+      <div class="reveal">
+        <div class="slider" id="slider">
+          <div class="slides" id="slides"></div>
+          <button class="sl-arrow prev" aria-label="Previous photo">‹</button>
+          <button class="sl-arrow next" aria-label="Next photo">›</button>
+          <div class="sl-dots" id="sl-dots"></div>
+          <div class="sl-progress" id="sl-progress"></div>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <div class="lightbox-figure">
+    <img src="" alt="">
+    <figcaption class="lb-caption mono"></figcaption>
+    <div class="lb-nav">
+      <button class="lb-btn lb-prev" aria-label="Previous">‹</button>
+      <button class="lb-btn lb-next" aria-label="Next">›</button>
+    </div>
+    <div class="lb-counter mono"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span>© <span id="year">2026</span> Dr. Sumangal Bhattacharya — website made by Aritra Banerjee</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="wrap footer-address">
+    Department of Mathematics · National Institute of Technology Manipur · Imphal, Manipur, India
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">↑</button>
+
+<script src="js/gallery-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
